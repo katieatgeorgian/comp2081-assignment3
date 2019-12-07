@@ -41,7 +41,7 @@
         <div class="row">
           <!-- first column -->
           <div class="col">
-            <section class="one">
+            <section class="electricitySection">
               <h4 class="text-uppercase">Electricity</h4>
               <p>
                 Most households and small businesses pay time-of-use electricity
@@ -52,7 +52,7 @@
               </p>
             </section>
 
-            <section class="two">
+            <section class="deliverySection">
               <h4 class="text-uppercase">Delivery</h4>
               This is made up of two separate costs. Both are approved by the
               OEB.
@@ -69,7 +69,7 @@
                 network of power lines within the communities it serves.
               </p>
             </section>
-            <section class="three">
+            <section class="regulatorySection">
               <h4 class="text-uppercase">Regulatory</h4>
               <p>
                 This is made up of the costs to administer the wholesale
@@ -79,7 +79,7 @@
               </p>
             </section>
 
-            <section class="four">
+            <section class="globalSection">
               <h4 class="text-uppercase">
                 Global Adjustment and Energy Contracts
               </h4>
@@ -111,7 +111,7 @@
 
           <!-- second column-->
           <div class="col">
-            <section class="shadow">
+            <section class="invoiceShadow">
               <!-- bootstrap -->
               <table class="table-borderless">
                 <caption class="text-uppercase">
@@ -126,7 +126,7 @@
                     <td colspan="2">000 000 000 000 0000 0</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><h5>Meter Number</h5></td>
+                    <td class="pt-3" colspan="2"><h5>Meter Number</h5></td>
                   </tr>
                   <tr>
                     <td class="pb-4" colspan="2">0000000</td>
@@ -138,7 +138,7 @@
                     <td colspan="2"><h3>Your Electricity Charges</h3></td>
                   </tr>
                   <tr>
-                    <td class="text-uppercase one">Electricity</td>
+                    <td class="text-uppercase electricitySection red">Electricity</td>
                     <td class="pl-5">x.xx</td>
                   </tr>
                   <tr>
@@ -151,11 +151,11 @@
                     <td colspan="2">488 kWh Off-peak @ X.X ¢ /kWh</td>
                   </tr>
                   <tr>
-                    <td class="text-uppercase two">Delivery</td>
+                    <td class="text-uppercase deliverySection red">Delivery</td>
                     <td class="pl-5">x.xx</td>
                   </tr>
                   <tr>
-                    <td class="text-uppercase three">Regulatory</td>
+                    <td class="text-uppercase regulatorySection red">Regulatory</td>
                     <td class="pl-5">x.xx</td>
                   </tr>
                   <tr>
@@ -198,8 +198,8 @@
             </section>
             <section>
               <div class="d-flex">
-                <object data="./assets/arrow.svg" type="image/svg+xml"></object>
-                <p class="text-uppercase mt-4 pb-5">
+                  <object class="arrow" data="./assets/arrow2.svg" type="image/svg+xml"></object>
+                <p class="text-uppercase pb-5">
                   To learn more about <br />
                   the items on your bill, visit
                   <a class="text-lowercase blue" href="#"
@@ -328,7 +328,81 @@
             <div class="row">
               <div class="d-flex">
                 <div>
-                  <h3 class="text-uppercase pt-1 pl-4">
+                    <svg
+                    class="fan"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 110 110"
+                    preserveAspectRatio="xMidYMid meet"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="102"
+                      x2="102"
+                      y1="9"
+                      y2="28"
+                      stroke="white"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="85"
+                      x2="90"
+                      y1="10"
+                      y2="30"
+                      stroke="white"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="65"
+                      x2="82"
+                      y1="20"
+                      y2="35"
+                      stroke="white"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="57"
+                      x2="82"
+                      y1="44"
+                      y2="44"
+                      stroke="white"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="82"
+                      x2="60"
+                      y1="55"
+                      y2="68"
+                      stroke="white"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="82"
+                      x2="90"
+                      y1="82"
+                      y2="62"
+                      stroke="white"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                    <line
+                      x1="102"
+                      x2="102"
+                      y1="84"
+                      y2="64"
+                      stroke="white"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-uppercase pt-1 pl-4 mb-0 pb-0">
                     Be an Informed Energy Consumer.
                   </h3>
                   <h3 class="text-uppercase pl-4">We Can Help</h3>
@@ -385,6 +459,7 @@
           <section class="secondPage">
             <div class="d-flex">
               <svg
+              class="fan"
                 width="100"
                 height="100"
                 viewBox="0 0 110 110"
@@ -455,7 +530,7 @@
                   stroke-linecap="round"
                 />
               </svg>
-              <h2 class="text-uppercase align-self-center">
+              <h2 class="text-uppercase align-self-center pl-3">
                 Time-Of-Use Electricity Prices
               </h2>
             </div>
@@ -489,11 +564,27 @@
           <section class="price">
               <div class="row">
                 <div class="col-4"></div>
-                <div class="col-6 text-center">
-                  <p class="text-uppercase">Weekdays</p>
+                <div class="col-6 text-center pr-0">
+                    <div class="d-flex w-75">
+
+                        <svg height="100px" width="150px">
+                            <path d="M 10 40 Q 95 10 150 10" stroke="#e96549" fill="transparent"/>
+                         </svg>
+                         <p class="text-uppercase">Weekdays</p>
+                         <svg height="100px" width="150px">
+                            <path d="M 10 10 Q 95 10 150 40" stroke="#e96549" fill="transparent"/>
+                         </svg>
+                    </div>
+                  
                 </div>
-                <div class="col-2 text-center">
-                  <p class="text-uppercase">Weekends & Holidays</p>
+                <div class="col-2 text-center pl-0">
+                  <div class="d-flex-column">
+                      <p class="text-uppercase">Weekends & Holidays</p>
+                      <svg height="100px" width="100px" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 40 10 L 40 50 " stroke="#e96549" fill="transparent"/>
+                      </svg>
+                  </div>
+                  
                 </div>
               </div>
 
@@ -540,11 +631,13 @@
                     data="./assets/pie1.svg"
                     type="image/svg+xml"
                   ></object>
-                  <div>
-                      <i class="fa fa-sun"></i>
+                  <div >
+                    <div class="d-flex">
+                      <i class="fa fa-sun-o"></i>
+                      <p class="text-uppercase font-weight-bold mb-0 pl-3">Summer</p>
+                    </div>
                     <div>
-                      <p class="text-uppercase font-weight-bold mb-0">Summer</p>
-                      <p>Nov 1 - Apr 30</p>
+                      <p class="pl-5 mt-0">Nov 1 - Apr 30</p>
                       <p>Electricity use peaks during the hottest part of the afternoon, when air conditioners are running on high.</p>
                     </div>
                   </div>
@@ -557,10 +650,13 @@
                       type="image/svg+xml"
                     ></object>
                     <div>
-                      <i class="fa fa-snowflake"></i>
+                      <div class="d-flex">
+                      <i class="fa fa-snowflake-o"></i>
+                      <p class="text-uppercase font-weight-bold mb-0 pl-3">Winter</p>
+                    </div>
                       <div>
-                        <p class="text-uppercase font-weight-bold mb-0">Winter</p>
-                        <p>May 1 - Oct 31</p>
+                        
+                        <p class="pl-5">May 1 - Oct 31</p>
                         <p>Less daylight means electricity use peaks twice: once in the morning when people wake up and turn on their lights and appliances, and again when people get home from work.</p>
                       </div>
                     </div>
@@ -588,6 +684,7 @@
           <section>
             <div class="d-flex svg">
               <svg
+              class="fan"
                 width="100"
                 height="100"
                 viewBox="0 0 110 110"
